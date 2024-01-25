@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+<style>
+    body{
+        background: rgb(230,10,51);
+        background: linear-gradient(90deg, rgba(230,10,51,1) 0%, rgba(232,65,104,1) 30%, rgba(237,179,216,1) 93%);
+    }
+    
+</style>
+<body>
+    <div class="container ">
+    <div class="card mb-3" >
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="{%static 'images/OIP.jpg'%}" class=" rounded-start" alt="..." width="100%" height="100%">
+          </div>
+          <div class=" col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">Signin</h5>
+              <div class="container1  d-flex justify-content-center mt-5 p-5 ">
+                <div class="h ">
+                <form action="" method="post" class="f">
+                    {%csrf_token%}
+                    {{form.as_p}}
+                   <button type="submit" class="btn btn-success text-black">login</button>
+                </form>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.container{
+    margin-top: 80px;
+    margin-left:260px;
+}
+.card{
+    width:60%;
+    
+}
+.form{
+    position:absolute;
+    top:10px;
+}
+.h{
+    position:absolute;
+    top:60px;
+}

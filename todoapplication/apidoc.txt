@@ -1,0 +1,27 @@
+register
+
+url:localhost:8000/api/register/
+
+body:{"username","email","password"}
+
+
+
+login
+todo create
+http://127.0.0.1:8000/api/todos
+method:post
+body{"name"}
+=================================
+todo list
+====================================
+method:get
+====================================
+todo update
+localhost:8000/api/todos/{id}/
+nody{}
+method:put
+===============
+todo delete
+localhost:8000/api/todos{id}/
+method:delete
+
